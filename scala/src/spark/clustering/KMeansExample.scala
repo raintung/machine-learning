@@ -28,7 +28,7 @@ object KMeansExample {
 //    val WSSSE = clusters.computeCost(parsedData)
 //    println("Within Set Sum of Squared Errors = " + WSSSE)
     
-    for(i <- 0 to 15){
+    for(i <- 3 to 4){
       val model:KMeansModel = KMeans.train(parsedData, i, 30)
       val ssd = model.computeCost(parsedData)
       println("k=" + i + " -> "+ ssd)
